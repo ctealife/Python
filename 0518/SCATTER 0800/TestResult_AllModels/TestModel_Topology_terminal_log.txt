@@ -1,0 +1,403 @@
+﻿
+========== Load Shared 2Tx Test Data ==========
+[Info] Rx1 MAT: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\2T2R\testing_data_rx1.mat
+[Info] Rx1 loaded in 0.33 sec
+[Info] Rx2 MAT: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\2T2R\testing_data_rx2.mat
+[Info] Rx2 loaded in 0.31 sec
+
+==========================================================================================
+[Test Mode] 2T2R
+==========================================================================================
+[Info] mode_name=2T2R, train_name=2T2R
+[Info] active_rx=[1, 2], mf_tx=[1, 2]
+[Info] X_test shape: (5000, 2, 10, 200, 2)
+[Info] num_paths=4, selected_rbi_keys=['Rbi_11_vec', 'Rbi_12_vec', 'Rbi_21_vec', 'Rbi_22_vec']
+[Info] target samples: 2493, no-target samples: 2507
+[Info] SCNR range: -97.30 ~ -0.19 dB
+[Info] pos_min=[-47.72208   29.425423], pos_max=[ 47.50941 168.95967]
+[Info] rbi_min=60.7252, rbi_max=338.9820
+[Info] Ovsamp_est=1, cfar_win_len=31, cfar_guard_len=3
+[Info] Model weights loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_2T2R\2T2R_det_pos_geo_weights.h5
+[Info] Norm params loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_2T2R\2T2R_norm_params.pkl
+[Info] model parameters: 866011
+
+========== Test Predict: 2T2R ==========
+
+========== Detection Error Samples ==========
+[2T2R] error samples: 1379
+test_index=1, sample_id=2, true_det=1, pred_det=0, prob=0.0424, SCNR=-69.36 dB
+test_index=2, sample_id=3, true_det=1, pred_det=0, prob=0.0033, SCNR=-32.81 dB
+test_index=6, sample_id=7, true_det=1, pred_det=0, prob=0.0033, SCNR=-36.02 dB
+test_index=7, sample_id=8, true_det=1, pred_det=0, prob=0.0106, SCNR=-28.36 dB
+test_index=9, sample_id=10, true_det=1, pred_det=0, prob=0.0021, SCNR=-31.25 dB
+test_index=14, sample_id=15, true_det=1, pred_det=0, prob=0.0021, SCNR=-40.30 dB
+test_index=16, sample_id=17, true_det=1, pred_det=0, prob=0.0030, SCNR=-26.90 dB
+test_index=17, sample_id=18, true_det=1, pred_det=0, prob=0.0015, SCNR=-25.01 dB
+test_index=18, sample_id=19, true_det=1, pred_det=0, prob=0.0003, SCNR=-33.17 dB
+test_index=19, sample_id=20, true_det=1, pred_det=0, prob=0.0209, SCNR=-30.64 dB
+test_index=22, sample_id=23, true_det=1, pred_det=0, prob=0.0034, SCNR=-34.97 dB
+test_index=26, sample_id=27, true_det=1, pred_det=0, prob=0.0023, SCNR=-29.99 dB
+test_index=30, sample_id=31, true_det=1, pred_det=0, prob=0.0064, SCNR=-33.77 dB
+test_index=33, sample_id=34, true_det=1, pred_det=0, prob=0.0065, SCNR=-45.92 dB
+test_index=39, sample_id=40, true_det=1, pred_det=0, prob=0.0020, SCNR=-24.88 dB
+test_index=41, sample_id=42, true_det=1, pred_det=0, prob=0.0048, SCNR=-25.09 dB
+test_index=43, sample_id=44, true_det=1, pred_det=0, prob=0.0348, SCNR=-67.83 dB
+test_index=47, sample_id=48, true_det=1, pred_det=0, prob=0.0252, SCNR=-30.96 dB
+test_index=49, sample_id=50, true_det=1, pred_det=0, prob=0.0020, SCNR=-17.41 dB
+test_index=52, sample_id=53, true_det=1, pred_det=0, prob=0.0058, SCNR=-37.32 dB
+
+========== Detection Threshold Sweep ==========
+ th  |  TN   FP   FN   TP  | Precision | Recall/Pd |   F1   |  P_FA
+0.30 | 2491   16 1332 1161 |    0.9864 |    0.4657 | 0.6327 | 0.0064
+0.40 | 2492   15 1349 1144 |    0.9871 |    0.4589 | 0.6265 | 0.0060
+0.50 | 2492   15 1364 1129 |    0.9869 |    0.4529 | 0.6208 | 0.0060
+0.60 | 2492   15 1386 1107 |    0.9866 |    0.4440 | 0.6124 | 0.0060
+0.70 | 2493   14 1401 1092 |    0.9873 |    0.4380 | 0.6068 | 0.0056
+0.80 | 2494   13 1430 1063 |    0.9879 |    0.4264 | 0.5957 | 0.0052
+0.90 | 2496   11 1456 1037 |    0.9895 |    0.4160 | 0.5857 | 0.0044
+
+========== Detection Metrics ==========
+[2T2R] threshold: 0.50
+[2T2R] precision: 0.9869, recall/Pd: 0.4529, F1: 0.6208, P_FA: 0.0060
+[[2492   15]
+ [1364 1129]]
+[Info] Confusion matrix figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\confusion_matrix_2T2R.png
+[2T2R] X MAE: 4.7937 m
+[2T2R] Y MAE: 12.6597 m
+[2T2R] X RMSE: 6.3532 m
+[2T2R] Y RMSE: 17.8771 m
+[2T2R] Position Euclidean MAE: 14.4998 m
+[2T2R] Position Euclidean RMSE: 18.9724 m
+
+[Info] 2T2R SCNR auto bins:
+SCNR min = -97.30 dB
+SCNR max = -0.19 dB
+bin width = 5.00 dB
+number of bins = 20
+
+========== 2T2R SCNR-binned Detection Accuracy ==========
+ SCNR bin (dB)      | median SCNR | count | correct | accuracy/Pd
+[-100.00,  -95.00) |      -97.30 |     1 |       0 |     0.0000
+[ -95.00,  -90.00) |      -90.14 |     1 |       0 |     0.0000
+[ -90.00,  -85.00) |      -86.92 |     2 |       1 |     0.5000
+[ -85.00,  -80.00) |      -83.46 |     4 |       2 |     0.5000
+[ -80.00,  -75.00) |      -78.31 |     7 |       2 |     0.2857
+[ -75.00,  -70.00) |      -71.65 |     9 |       4 |     0.4444
+[ -70.00,  -65.00) |      -67.52 |    16 |       7 |     0.4375
+[ -65.00,  -60.00) |      -61.74 |    23 |       5 |     0.2174
+[ -60.00,  -55.00) |      -57.17 |    48 |      18 |     0.3750
+[ -55.00,  -50.00) |      -52.20 |    80 |      37 |     0.4625
+[ -50.00,  -45.00) |      -46.75 |   116 |      57 |     0.4914
+[ -45.00,  -40.00) |      -42.34 |   237 |      86 |     0.3629
+[ -40.00,  -35.00) |      -37.25 |   294 |      83 |     0.2823
+[ -35.00,  -30.00) |      -32.59 |   355 |     120 |     0.3380
+[ -30.00,  -25.00) |      -27.30 |   400 |     122 |     0.3050
+[ -25.00,  -20.00) |      -22.44 |   351 |     157 |     0.4473
+[ -20.00,  -15.00) |      -17.78 |   242 |     149 |     0.6157
+[ -15.00,  -10.00) |      -12.73 |   183 |     156 |     0.8525
+[ -10.00,   -5.00) |       -7.64 |    98 |      97 |     0.9898
+[  -5.00,    0.00) |       -3.19 |    26 |      26 |     1.0000
+[Info] 2T2R SCNR-accuracy figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\2t2r_scnr_detection_accuracy_auto.png
+[Info] Test predictions saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\predictions\predictions_2T2R.npz
+
+==========================================================================================
+[Test Mode] 2T1R
+==========================================================================================
+[Info] mode_name=2T1R, train_name=2T1R
+[Info] active_rx=[1], mf_tx=[1, 2]
+[Info] X_test shape: (5000, 1, 10, 200, 2)
+[Info] num_paths=2, selected_rbi_keys=['Rbi_11_vec', 'Rbi_21_vec']
+[Info] target samples: 2493, no-target samples: 2507
+[Info] SCNR range: -97.30 ~ -0.19 dB
+[Info] pos_min=[-47.72208   29.366861], pos_max=[ 47.23599 168.98753]
+[Info] rbi_min=60.9138, rbi_max=338.9772
+[Info] Ovsamp_est=1, cfar_win_len=31, cfar_guard_len=3
+[Info] Model weights loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_2T1R\2T1R_det_pos_geo_weights.h5
+[Info] Norm params loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_2T1R\2T1R_norm_params.pkl
+[Info] model parameters: 862811
+
+========== Test Predict: 2T1R ==========
+
+========== Detection Error Samples ==========
+[2T1R] error samples: 166
+test_index=14, sample_id=15, true_det=1, pred_det=0, prob=0.2323, SCNR=-40.30 dB
+test_index=54, sample_id=55, true_det=1, pred_det=0, prob=0.2958, SCNR=-52.15 dB
+test_index=251, sample_id=252, true_det=1, pred_det=0, prob=0.1459, SCNR=-60.89 dB
+test_index=252, sample_id=253, true_det=1, pred_det=0, prob=0.4283, SCNR=-50.30 dB
+test_index=284, sample_id=285, true_det=0, pred_det=1, prob=0.7050, SCNR=nan dB
+test_index=297, sample_id=298, true_det=1, pred_det=0, prob=0.1845, SCNR=-19.31 dB
+test_index=312, sample_id=313, true_det=1, pred_det=0, prob=0.0571, SCNR=-26.02 dB
+test_index=320, sample_id=321, true_det=1, pred_det=0, prob=0.0032, SCNR=-17.10 dB
+test_index=343, sample_id=344, true_det=0, pred_det=1, prob=0.8390, SCNR=nan dB
+test_index=363, sample_id=364, true_det=0, pred_det=1, prob=0.9575, SCNR=nan dB
+test_index=378, sample_id=379, true_det=1, pred_det=0, prob=0.0139, SCNR=-33.27 dB
+test_index=401, sample_id=402, true_det=1, pred_det=0, prob=0.4321, SCNR=-35.66 dB
+test_index=486, sample_id=487, true_det=0, pred_det=1, prob=0.7394, SCNR=nan dB
+test_index=488, sample_id=489, true_det=1, pred_det=0, prob=0.3072, SCNR=-21.41 dB
+test_index=555, sample_id=556, true_det=1, pred_det=0, prob=0.0135, SCNR=-17.28 dB
+test_index=610, sample_id=611, true_det=1, pred_det=0, prob=0.2526, SCNR=-85.43 dB
+test_index=618, sample_id=619, true_det=0, pred_det=1, prob=0.8612, SCNR=nan dB
+test_index=669, sample_id=670, true_det=0, pred_det=1, prob=0.9685, SCNR=nan dB
+test_index=694, sample_id=695, true_det=1, pred_det=0, prob=0.4014, SCNR=-54.96 dB
+test_index=717, sample_id=718, true_det=0, pred_det=1, prob=0.8144, SCNR=nan dB
+
+========== Detection Threshold Sweep ==========
+ th  |  TN   FP   FN   TP  | Precision | Recall/Pd |   F1   |  P_FA
+0.30 | 2439   68   94 2399 |    0.9724 |    0.9623 | 0.9673 | 0.0271
+0.40 | 2460   47  109 2384 |    0.9807 |    0.9563 | 0.9683 | 0.0187
+0.50 | 2467   40  126 2367 |    0.9834 |    0.9495 | 0.9661 | 0.0160
+0.60 | 2468   39  133 2360 |    0.9837 |    0.9467 | 0.9648 | 0.0156
+0.70 | 2474   33  140 2353 |    0.9862 |    0.9438 | 0.9645 | 0.0132
+0.80 | 2478   29  146 2347 |    0.9878 |    0.9414 | 0.9641 | 0.0116
+0.90 | 2489   18  163 2330 |    0.9923 |    0.9346 | 0.9626 | 0.0072
+
+========== Detection Metrics ==========
+[2T1R] threshold: 0.50
+[2T1R] precision: 0.9834, recall/Pd: 0.9495, F1: 0.9661, P_FA: 0.0160
+[[2467   40]
+ [ 126 2367]]
+[Info] Confusion matrix figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\confusion_matrix_2T1R.png
+[2T1R] X MAE: 9.9297 m
+[2T1R] Y MAE: 6.9009 m
+[2T1R] X RMSE: 13.3466 m
+[2T1R] Y RMSE: 9.4251 m
+[2T1R] Position Euclidean MAE: 13.6269 m
+[2T1R] Position Euclidean RMSE: 16.3390 m
+
+[Info] 2T1R SCNR auto bins:
+SCNR min = -97.30 dB
+SCNR max = -0.19 dB
+bin width = 5.00 dB
+number of bins = 20
+
+========== 2T1R SCNR-binned Detection Accuracy ==========
+ SCNR bin (dB)      | median SCNR | count | correct | accuracy/Pd
+[-100.00,  -95.00) |      -97.30 |     1 |       0 |     0.0000
+[ -95.00,  -90.00) |      -90.14 |     1 |       0 |     0.0000
+[ -90.00,  -85.00) |      -86.92 |     2 |       0 |     0.0000
+[ -85.00,  -80.00) |      -83.46 |     4 |       0 |     0.0000
+[ -80.00,  -75.00) |      -78.31 |     7 |       3 |     0.4286
+[ -75.00,  -70.00) |      -71.65 |     9 |       6 |     0.6667
+[ -70.00,  -65.00) |      -67.52 |    16 |      14 |     0.8750
+[ -65.00,  -60.00) |      -61.74 |    23 |      11 |     0.4783
+[ -60.00,  -55.00) |      -57.17 |    48 |      36 |     0.7500
+[ -55.00,  -50.00) |      -52.20 |    80 |      58 |     0.7250
+[ -50.00,  -45.00) |      -46.75 |   116 |     107 |     0.9224
+[ -45.00,  -40.00) |      -42.34 |   237 |     222 |     0.9367
+[ -40.00,  -35.00) |      -37.25 |   294 |     288 |     0.9796
+[ -35.00,  -30.00) |      -32.59 |   355 |     346 |     0.9746
+[ -30.00,  -25.00) |      -27.30 |   400 |     396 |     0.9900
+[ -25.00,  -20.00) |      -22.44 |   351 |     345 |     0.9829
+[ -20.00,  -15.00) |      -17.78 |   242 |     232 |     0.9587
+[ -15.00,  -10.00) |      -12.73 |   183 |     180 |     0.9836
+[ -10.00,   -5.00) |       -7.64 |    98 |      97 |     0.9898
+[  -5.00,    0.00) |       -3.19 |    26 |      26 |     1.0000
+[Info] 2T1R SCNR-accuracy figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\2t1r_scnr_detection_accuracy_auto.png
+[Info] Test predictions saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\predictions\predictions_2T1R.npz
+
+==========================================================================================
+[Test Mode] 1T2R
+==========================================================================================
+[Info] mode_name=1T2R, train_name=1T2R
+[Info] active_rx=[1, 2], mf_tx=[1]
+[Info] X_test shape: (5000, 2, 10, 200, 2)
+[Info] num_paths=2, selected_rbi_keys=['Rbi_11_vec', 'Rbi_12_vec']
+[Info] target samples: 2493, no-target samples: 2507
+[Info] SCNR range: -97.30 ~ -0.19 dB
+[Info] pos_min=[-47.72208   29.425423], pos_max=[ 47.50941 168.95967]
+[Info] rbi_min=60.8660, rbi_max=338.9820
+[Info] Ovsamp_est=1, cfar_win_len=31, cfar_guard_len=3
+[Info] Model weights loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_1T2R\1T2R_det_pos_geo_weights.h5
+[Info] Norm params loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_1T2R\1T2R_norm_params.pkl
+[Info] model parameters: 862687
+
+========== Test Predict: 1T2R ==========
+
+========== Detection Error Samples ==========
+[1T2R] error samples: 1393
+test_index=1, sample_id=2, true_det=1, pred_det=0, prob=0.0113, SCNR=-69.36 dB
+test_index=2, sample_id=3, true_det=1, pred_det=0, prob=0.0081, SCNR=-32.81 dB
+test_index=6, sample_id=7, true_det=1, pred_det=0, prob=0.0096, SCNR=-36.02 dB
+test_index=7, sample_id=8, true_det=1, pred_det=0, prob=0.0348, SCNR=-28.36 dB
+test_index=9, sample_id=10, true_det=1, pred_det=0, prob=0.0017, SCNR=-31.25 dB
+test_index=10, sample_id=11, true_det=1, pred_det=0, prob=0.0385, SCNR=-43.87 dB
+test_index=14, sample_id=15, true_det=1, pred_det=0, prob=0.0025, SCNR=-40.30 dB
+test_index=16, sample_id=17, true_det=1, pred_det=0, prob=0.0421, SCNR=-26.90 dB
+test_index=17, sample_id=18, true_det=1, pred_det=0, prob=0.0008, SCNR=-25.01 dB
+test_index=18, sample_id=19, true_det=1, pred_det=0, prob=0.0002, SCNR=-33.17 dB
+test_index=19, sample_id=20, true_det=1, pred_det=0, prob=0.1379, SCNR=-30.64 dB
+test_index=22, sample_id=23, true_det=1, pred_det=0, prob=0.0023, SCNR=-34.97 dB
+test_index=26, sample_id=27, true_det=1, pred_det=0, prob=0.0012, SCNR=-29.99 dB
+test_index=30, sample_id=31, true_det=1, pred_det=0, prob=0.0157, SCNR=-33.77 dB
+test_index=33, sample_id=34, true_det=1, pred_det=0, prob=0.0102, SCNR=-45.92 dB
+test_index=41, sample_id=42, true_det=1, pred_det=0, prob=0.0073, SCNR=-25.09 dB
+test_index=43, sample_id=44, true_det=1, pred_det=0, prob=0.0029, SCNR=-67.83 dB
+test_index=47, sample_id=48, true_det=1, pred_det=0, prob=0.0051, SCNR=-30.96 dB
+test_index=52, sample_id=53, true_det=1, pred_det=0, prob=0.0104, SCNR=-37.32 dB
+test_index=53, sample_id=54, true_det=1, pred_det=0, prob=0.0787, SCNR=-23.28 dB
+
+========== Detection Threshold Sweep ==========
+ th  |  TN   FP   FN   TP  | Precision | Recall/Pd |   F1   |  P_FA
+0.30 | 2504    3 1341 1152 |    0.9974 |    0.4621 | 0.6316 | 0.0012
+0.40 | 2504    3 1367 1126 |    0.9973 |    0.4517 | 0.6218 | 0.0012
+0.50 | 2504    3 1390 1103 |    0.9973 |    0.4424 | 0.6129 | 0.0012
+0.60 | 2505    2 1409 1084 |    0.9982 |    0.4348 | 0.6058 | 0.0008
+0.70 | 2505    2 1428 1065 |    0.9981 |    0.4272 | 0.5983 | 0.0008
+0.80 | 2505    2 1454 1039 |    0.9981 |    0.4168 | 0.5880 | 0.0008
+0.90 | 2505    2 1486 1007 |    0.9980 |    0.4039 | 0.5751 | 0.0008
+
+========== Detection Metrics ==========
+[1T2R] threshold: 0.50
+[1T2R] precision: 0.9973, recall/Pd: 0.4424, F1: 0.6129, P_FA: 0.0012
+[[2504    3]
+ [1390 1103]]
+[Info] Confusion matrix figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\confusion_matrix_1T2R.png
+[1T2R] X MAE: 6.6948 m
+[1T2R] Y MAE: 14.7727 m
+[1T2R] X RMSE: 8.7244 m
+[1T2R] Y RMSE: 21.0149 m
+[1T2R] Position Euclidean MAE: 17.3692 m
+[1T2R] Position Euclidean RMSE: 22.7539 m
+
+[Info] 1T2R SCNR auto bins:
+SCNR min = -97.30 dB
+SCNR max = -0.19 dB
+bin width = 5.00 dB
+number of bins = 20
+
+========== 1T2R SCNR-binned Detection Accuracy ==========
+ SCNR bin (dB)      | median SCNR | count | correct | accuracy/Pd
+[-100.00,  -95.00) |      -97.30 |     1 |       0 |     0.0000
+[ -95.00,  -90.00) |      -90.14 |     1 |       0 |     0.0000
+[ -90.00,  -85.00) |      -86.92 |     2 |       0 |     0.0000
+[ -85.00,  -80.00) |      -83.46 |     4 |       0 |     0.0000
+[ -80.00,  -75.00) |      -78.31 |     7 |       1 |     0.1429
+[ -75.00,  -70.00) |      -71.65 |     9 |       2 |     0.2222
+[ -70.00,  -65.00) |      -67.52 |    16 |       5 |     0.3125
+[ -65.00,  -60.00) |      -61.74 |    23 |       2 |     0.0870
+[ -60.00,  -55.00) |      -57.17 |    48 |      13 |     0.2708
+[ -55.00,  -50.00) |      -52.20 |    80 |      26 |     0.3250
+[ -50.00,  -45.00) |      -46.75 |   116 |      38 |     0.3276
+[ -45.00,  -40.00) |      -42.34 |   237 |      62 |     0.2616
+[ -40.00,  -35.00) |      -37.25 |   294 |      64 |     0.2177
+[ -35.00,  -30.00) |      -32.59 |   355 |     110 |     0.3099
+[ -30.00,  -25.00) |      -27.30 |   400 |     138 |     0.3450
+[ -25.00,  -20.00) |      -22.44 |   351 |     159 |     0.4530
+[ -20.00,  -15.00) |      -17.78 |   242 |     194 |     0.8017
+[ -15.00,  -10.00) |      -12.73 |   183 |     169 |     0.9235
+[ -10.00,   -5.00) |       -7.64 |    98 |      95 |     0.9694
+[  -5.00,    0.00) |       -3.19 |    26 |      25 |     0.9615
+[Info] 1T2R SCNR-accuracy figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\1t2r_scnr_detection_accuracy_auto.png
+[Info] Test predictions saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\predictions\predictions_1T2R.npz
+
+==========================================================================================
+[Test Mode] 1T1R
+==========================================================================================
+[Info] mode_name=1T1R, train_name=1T1R
+[Info] active_rx=[1], mf_tx=[1]
+[Info] X_test shape: (5000, 1, 10, 200, 2)
+[Info] num_paths=1, selected_rbi_keys=['Rbi_11_vec']
+[Info] target samples: 2493, no-target samples: 2507
+[Info] SCNR range: -97.30 ~ -0.19 dB
+[Info] pos_min=[-47.72208   29.425423], pos_max=[ 47.50941 168.95967]
+[Info] rbi_min=61.0639, rbi_max=338.9820
+[Info] Ovsamp_est=1, cfar_win_len=31, cfar_guard_len=3
+[Info] Model weights loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_1T1R\1T1R_det_pos_geo_weights.h5
+[Info] Norm params loaded: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\Training_Result_1T1R\1T1R_norm_params.pkl
+[Info] model parameters: 861087
+
+========== Test Predict: 1T1R ==========
+
+========== Detection Error Samples ==========
+[1T1R] error samples: 1145
+test_index=1, sample_id=2, true_det=1, pred_det=0, prob=0.2787, SCNR=-69.36 dB
+test_index=2, sample_id=3, true_det=1, pred_det=0, prob=0.0024, SCNR=-32.81 dB
+test_index=6, sample_id=7, true_det=1, pred_det=0, prob=0.0094, SCNR=-36.02 dB
+test_index=7, sample_id=8, true_det=1, pred_det=0, prob=0.0439, SCNR=-28.36 dB
+test_index=9, sample_id=10, true_det=1, pred_det=0, prob=0.0058, SCNR=-31.25 dB
+test_index=10, sample_id=11, true_det=1, pred_det=0, prob=0.1034, SCNR=-43.87 dB
+test_index=14, sample_id=15, true_det=1, pred_det=0, prob=0.0006, SCNR=-40.30 dB
+test_index=18, sample_id=19, true_det=1, pred_det=0, prob=0.0009, SCNR=-33.17 dB
+test_index=22, sample_id=23, true_det=1, pred_det=0, prob=0.0031, SCNR=-34.97 dB
+test_index=26, sample_id=27, true_det=1, pred_det=0, prob=0.0021, SCNR=-29.99 dB
+test_index=33, sample_id=34, true_det=1, pred_det=0, prob=0.3253, SCNR=-45.92 dB
+test_index=35, sample_id=36, true_det=1, pred_det=0, prob=0.1325, SCNR=-34.98 dB
+test_index=42, sample_id=43, true_det=0, pred_det=1, prob=0.5256, SCNR=nan dB
+test_index=45, sample_id=46, true_det=1, pred_det=0, prob=0.3538, SCNR=-37.48 dB
+test_index=47, sample_id=48, true_det=1, pred_det=0, prob=0.0058, SCNR=-30.96 dB
+test_index=52, sample_id=53, true_det=1, pred_det=0, prob=0.0016, SCNR=-37.32 dB
+test_index=53, sample_id=54, true_det=1, pred_det=0, prob=0.0572, SCNR=-23.28 dB
+test_index=54, sample_id=55, true_det=1, pred_det=0, prob=0.1508, SCNR=-52.15 dB
+test_index=56, sample_id=57, true_det=1, pred_det=0, prob=0.0110, SCNR=-28.13 dB
+test_index=74, sample_id=75, true_det=1, pred_det=0, prob=0.0004, SCNR=-30.05 dB
+
+========== Detection Threshold Sweep ==========
+ th  |  TN   FP   FN   TP  | Precision | Recall/Pd |   F1   |  P_FA
+0.30 | 2388  119 1000 1493 |    0.9262 |    0.5989 | 0.7274 | 0.0475
+0.40 | 2414   93 1044 1449 |    0.9397 |    0.5812 | 0.7182 | 0.0371
+0.50 | 2435   72 1073 1420 |    0.9517 |    0.5696 | 0.7127 | 0.0287
+0.60 | 2454   53 1104 1389 |    0.9632 |    0.5572 | 0.7060 | 0.0211
+0.70 | 2489   18 1140 1353 |    0.9869 |    0.5427 | 0.7003 | 0.0072
+0.80 | 2501    6 1165 1328 |    0.9955 |    0.5327 | 0.6940 | 0.0024
+0.90 | 2503    4 1213 1280 |    0.9969 |    0.5134 | 0.6778 | 0.0016
+
+========== Detection Metrics ==========
+[1T1R] threshold: 0.50
+[1T1R] precision: 0.9517, recall/Pd: 0.5696, F1: 0.7127, P_FA: 0.0287
+[[2435   72]
+ [1073 1420]]
+[Info] Confusion matrix figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\confusion_matrix_1T1R.png
+[1T1R] X MAE: 12.2914 m
+[1T1R] Y MAE: 15.3407 m
+[1T1R] X RMSE: 16.3888 m
+[1T1R] Y RMSE: 22.7002 m
+[1T1R] Position Euclidean MAE: 21.9989 m
+[1T1R] Position Euclidean RMSE: 27.9981 m
+
+[Info] 1T1R SCNR auto bins:
+SCNR min = -97.30 dB
+SCNR max = -0.19 dB
+bin width = 5.00 dB
+number of bins = 20
+
+========== 1T1R SCNR-binned Detection Accuracy ==========
+ SCNR bin (dB)      | median SCNR | count | correct | accuracy/Pd
+[-100.00,  -95.00) |      -97.30 |     1 |       1 |     1.0000
+[ -95.00,  -90.00) |      -90.14 |     1 |       1 |     1.0000
+[ -90.00,  -85.00) |      -86.92 |     2 |       2 |     1.0000
+[ -85.00,  -80.00) |      -83.46 |     4 |       4 |     1.0000
+[ -80.00,  -75.00) |      -78.31 |     7 |       6 |     0.8571
+[ -75.00,  -70.00) |      -71.65 |     9 |       4 |     0.4444
+[ -70.00,  -65.00) |      -67.52 |    16 |      10 |     0.6250
+[ -65.00,  -60.00) |      -61.74 |    23 |      11 |     0.4783
+[ -60.00,  -55.00) |      -57.17 |    48 |      20 |     0.4167
+[ -55.00,  -50.00) |      -52.20 |    80 |      34 |     0.4250
+[ -50.00,  -45.00) |      -46.75 |   116 |      47 |     0.4052
+[ -45.00,  -40.00) |      -42.34 |   237 |      75 |     0.3165
+[ -40.00,  -35.00) |      -37.25 |   294 |      69 |     0.2347
+[ -35.00,  -30.00) |      -32.59 |   355 |     122 |     0.3437
+[ -30.00,  -25.00) |      -27.30 |   400 |     217 |     0.5425
+[ -25.00,  -20.00) |      -22.44 |   351 |     279 |     0.7949
+[ -20.00,  -15.00) |      -17.78 |   242 |     216 |     0.8926
+[ -15.00,  -10.00) |      -12.73 |   183 |     179 |     0.9781
+[ -10.00,   -5.00) |       -7.64 |    98 |      97 |     0.9898
+[  -5.00,    0.00) |       -3.19 |    26 |      26 |     1.0000
+[Info] 1T1R SCNR-accuracy figure saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\figures\1t1r_scnr_detection_accuracy_auto.png
+[Info] Test predictions saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\predictions\predictions_1T1R.npz
+
+========== All Model Test Summary ==========
+  model_name train_name active_rx   mf_tx  num_rx  num_mf_tx  ...  Euclidean_MAE_detected_target  Euclidean_RMSE_detected_target  SCNR_mean_target  SCNR_median_target  SCNR_min_target  SCNR_max_target
+0       2T2R       2T2R    [1, 2]  [1, 2]       2          2  ...                       7.347946                        8.594724         -30.33663          -29.235001        -97.30027        -0.190465
+1       2T1R       2T1R       [1]  [1, 2]       1          2  ...                      13.078563                       15.372123         -30.33663          -29.235001        -97.30027        -0.190465
+2       1T2R       1T2R    [1, 2]     [1]       2          1  ...                       8.196691                        9.500502         -30.33663          -29.235001        -97.30027        -0.190465
+3       1T1R       1T1R       [1]     [1]       1          1  ...                      16.585375                       21.728739         -30.33663          -29.235001        -97.30027        -0.190465
+
+[4 rows x 39 columns]
+[Info] Summary saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\all_model_test_summary.csv
+[Info] Per-sample predictions saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\all_model_per_sample_predictions.csv
+[Info] Fixed-PFA summary saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\fixed_pfa_summary.csv
+[Info] SCNR-binned comparison saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\scnr_binned_model_comparison.csv
+[Info] Disagreement matrix saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\model_disagreement_matrix.csv
+[Info] Diagnostics saved in: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\diagnostics
+[Info] Experiment config saved: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\test_experiment_config.json
+[Info] Test terminal output saved TXT: C:\鈞論文\paper_2026\CNN\training_result\0518\SCATTER 0800\TestResult_AllModels\TestModel_Topology_terminal_log.txt

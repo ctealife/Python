@@ -27,7 +27,7 @@ sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 TOPOLOGY = "2T2R"   # "2T2R", "2T1R", "1T2R", "1T1R"
 
-BASE_DIR = r"C:\鈞論文\paper_2026\CNN\training_result\0517"
+BASE_DIR = r"C:\鈞論文\paper_2026\CNN\training_result\0518"
 
 TOPOLOGY_CONFIG = {
     "2T2R": {

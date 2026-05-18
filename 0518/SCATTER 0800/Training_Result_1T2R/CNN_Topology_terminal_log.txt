@@ -1,0 +1,342 @@
+﻿
+========== GPU SET... ==========
+[Info] 載入 Rx1 MAT 檔案: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\training_data_rx1.mat
+[Info] Rx1 載入完成，耗時 2.77 秒
+[Info] 載入 Rx2 MAT 檔案: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\training_data_rx2.mat
+[Info] Rx2 載入完成，耗時 2.80 秒
+
+========== PN / Matched Filter / CFAR Check ==========
+len(pnSeq1) = 31
+Estimated Ovsamp from PN length = 1
+CFAR win_len = 31
+CFAR guard_len = 3
+[Info] X topology input shape: (50000, 2, 10, 200, 2)
+[Info] active_tx=[1], active_rx=[1, 2], num_paths=2
+[Info] y_det shape: (50000,)
+[Info] pos_raw shape: (50000, 2)
+[Info] rbi_raw shape: (50000, 2)
+[Info] target samples: 25014, no-target samples: 24986
+[Info] Global clutter-based SCNR range: -108.78 ~ 0.77 dB
+[Info] SCNR definition: target power controlled by whole-sample Rx1 clutter average, not local target-bin clutter.
+[Check] val normalized position min: [ 0.00048645 -0.00041969]
+[Check] val normalized position max: [0.9891628 1.0001997]
+
+========== Validation Split Distribution ==========
+total samples     : 5000
+target samples    : 2499
+no-target samples : 2501
+
+[Target Global Clutter-based SCNR]
+definition: target power controlled by whole-sample Rx1 clutter average
+min  = -93.89 dB
+mean = -29.78 dB
+max  = -0.60 dB
+
+[Target SNR distribution]
+SNR=   0.0 dB | count=407
+SNR=   3.0 dB | count=430
+SNR=   6.0 dB | count=407
+SNR=   9.0 dB | count=444
+SNR=  12.0 dB | count=391
+SNR=  15.0 dB | count=420
+
+[Target RCS summary]
+min  = 0.10
+mean = 3.75
+max  = 10.00
+
+[Target range class distribution]
+range_cls=1 | count=20
+range_cls=2 | count=18
+range_cls=3 | count=17
+range_cls=4 | count=18
+range_cls=5 | count=19
+range_cls=6 | count=20
+range_cls=7 | count=22
+range_cls=8 | count=16
+range_cls=9 | count=20
+range_cls=10 | count=15
+range_cls=11 | count=18
+range_cls=12 | count=21
+range_cls=13 | count=22
+range_cls=14 | count=22
+range_cls=15 | count=19
+range_cls=16 | count=18
+range_cls=17 | count=12
+range_cls=18 | count=19
+range_cls=19 | count=19
+range_cls=20 | count=22
+range_cls=21 | count=19
+range_cls=22 | count=14
+range_cls=23 | count=17
+range_cls=24 | count=21
+range_cls=25 | count=15
+range_cls=26 | count=17
+range_cls=27 | count=21
+range_cls=28 | count=16
+range_cls=29 | count=13
+range_cls=30 | count=10
+range_cls=31 | count=15
+range_cls=32 | count=17
+range_cls=33 | count=19
+range_cls=34 | count=20
+range_cls=35 | count=14
+range_cls=36 | count=16
+range_cls=37 | count=17
+range_cls=38 | count=19
+range_cls=39 | count=13
+range_cls=40 | count=24
+range_cls=41 | count=12
+range_cls=42 | count=16
+range_cls=43 | count=10
+range_cls=44 | count=22
+range_cls=45 | count=14
+range_cls=46 | count=16
+range_cls=47 | count=18
+range_cls=48 | count=23
+range_cls=49 | count=18
+range_cls=50 | count=24
+range_cls=51 | count=13
+range_cls=52 | count=23
+range_cls=53 | count=15
+range_cls=54 | count=16
+range_cls=55 | count=18
+range_cls=56 | count=21
+range_cls=57 | count=19
+range_cls=58 | count=19
+range_cls=59 | count=24
+range_cls=60 | count=25
+range_cls=61 | count=11
+range_cls=62 | count=14
+range_cls=63 | count=21
+range_cls=64 | count=20
+range_cls=65 | count=15
+range_cls=66 | count=17
+range_cls=67 | count=19
+range_cls=68 | count=26
+range_cls=69 | count=21
+range_cls=70 | count=14
+range_cls=71 | count=18
+range_cls=72 | count=16
+range_cls=73 | count=15
+range_cls=74 | count=20
+range_cls=75 | count=15
+range_cls=76 | count=20
+range_cls=77 | count=18
+range_cls=78 | count=17
+range_cls=79 | count=17
+range_cls=80 | count=12
+range_cls=81 | count=20
+range_cls=82 | count=21
+range_cls=83 | count=24
+range_cls=84 | count=11
+range_cls=85 | count=21
+range_cls=86 | count=11
+range_cls=87 | count=23
+range_cls=88 | count=16
+range_cls=89 | count=25
+range_cls=90 | count=17
+range_cls=91 | count=19
+range_cls=92 | count=22
+range_cls=93 | count=16
+range_cls=94 | count=14
+range_cls=95 | count=18
+range_cls=96 | count=21
+range_cls=97 | count=15
+range_cls=98 | count=19
+range_cls=99 | count=16
+range_cls=100 | count=19
+range_cls=101 | count=23
+range_cls=102 | count=14
+range_cls=103 | count=21
+range_cls=104 | count=17
+range_cls=105 | count=16
+range_cls=106 | count=16
+range_cls=107 | count=20
+range_cls=108 | count=17
+range_cls=109 | count=19
+range_cls=110 | count=22
+range_cls=111 | count=17
+range_cls=112 | count=21
+range_cls=113 | count=22
+range_cls=114 | count=17
+range_cls=115 | count=17
+range_cls=116 | count=24
+range_cls=117 | count=24
+range_cls=118 | count=23
+range_cls=119 | count=27
+range_cls=120 | count=25
+range_cls=121 | count=21
+range_cls=122 | count=16
+range_cls=123 | count=23
+range_cls=124 | count=12
+range_cls=125 | count=15
+range_cls=126 | count=18
+range_cls=127 | count=10
+range_cls=128 | count=15
+range_cls=129 | count=13
+range_cls=130 | count=21
+range_cls=131 | count=17
+range_cls=132 | count=14
+range_cls=133 | count=18
+range_cls=134 | count=17
+range_cls=135 | count=15
+range_cls=136 | count=15
+range_cls=137 | count=14
+range_cls=138 | count=12
+range_cls=139 | count=17
+
+[Info] 驗證集筆數: 5000
+[Info] val target samples: 2499, val no-target samples: 2501
+[Info] pos_min=[-47.72208   29.425423], pos_max=[ 47.50941 168.95967]
+[Info] rbi_min=60.8660, rbi_max=338.9820
+[Info] y_pos shape: (50000, 2)
+[Info] y_geo shape: (50000, 2)
+Model: "mimo_1T2R_det_pos_geo"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ mimo_feature_input (InputLayer  [(None, 2, 10, 200,  0          []                               
+ )                               2)]                                                              
+                                                                                                  
+ merge_batch_rx_pulse (Lambda)  (None, 200, 2)       0           ['mimo_feature_input[0][0]']     
+                                                                                                  
+ pn_matched_filter_bank (Conv1D  (None, 200, 2)      124         ['merge_batch_rx_pulse[0][0]']   
+ )                                                                                                
+                                                                                                  
+ split_tx_iq (Lambda)           (None, 200, 1, 2)    0           ['pn_matched_filter_bank[0][0]'] 
+                                                                                                  
+ per_tx_power (Lambda)          (None, 200, 1)       0           ['split_tx_iq[0][0]']            
+                                                                                                  
+ to_virtual_channels_for_cfar (  (None, 200, 1)      0           ['per_tx_power[0][0]']           
+ Lambda)                                                                                          
+                                                                                                  
+ os_cfar_ratio (Lambda)         (None, 200, 1)       0           ['to_virtual_channels_for_cfar[0]
+                                                                 [0]']                            
+                                                                                                  
+ log_power (Lambda)             (None, 200, 1)       0           ['os_cfar_ratio[0][0]']          
+                                                                                                  
+ mimo_virtual_pulse_as_channel   (None, 200, 20)     0           ['log_power[0][0]']              
+ (Lambda)                                                                                         
+                                                                                                  
+ conv1d_2 (Conv1D)              (None, 200, 32)      3232        ['mimo_virtual_pulse_as_channel[0
+                                                                 ][0]']                           
+                                                                                                  
+ bn_1 (BatchNormalization)      (None, 200, 32)      128         ['conv1d_2[0][0]']               
+                                                                                                  
+ relu_1 (ReLU)                  (None, 200, 32)      0           ['bn_1[0][0]']                   
+                                                                                                  
+ conv1d_3 (Conv1D)              (None, 200, 64)      6208        ['relu_1[0][0]']                 
+                                                                                                  
+ bn_2 (BatchNormalization)      (None, 200, 64)      256         ['conv1d_3[0][0]']               
+                                                                                                  
+ relu_2 (ReLU)                  (None, 200, 64)      0           ['bn_2[0][0]']                   
+                                                                                                  
+ maxpool_1 (MaxPooling1D)       (None, 50, 64)       0           ['relu_2[0][0]']                 
+                                                                                                  
+ flatten (Flatten)              (None, 3200)         0           ['maxpool_1[0][0]']              
+                                                                                                  
+ dense_1 (Dense)                (None, 256)          819456      ['flatten[0][0]']                
+                                                                                                  
+ dropout_1 (Dropout)            (None, 256)          0           ['dense_1[0][0]']                
+                                                                                                  
+ dense_2 (Dense)                (None, 128)          32896       ['dropout_1[0][0]']              
+                                                                                                  
+ dropout_2 (Dropout)            (None, 128)          0           ['dense_2[0][0]']                
+                                                                                                  
+ pos_output (Dense)             (None, 2)            258         ['dropout_2[0][0]']              
+                                                                                                  
+ det_output (Dense)             (None, 1)            129         ['dropout_2[0][0]']              
+                                                                                                  
+ geo_output (Lambda)            (None, 2)            0           ['pos_output[0][0]']             
+                                                                                                  
+==================================================================================================
+Total params: 862,687
+Trainable params: 862,495
+Non-trainable params: 192
+__________________________________________________________________________________________________
+
+Epoch 23: ReduceLROnPlateau reducing learning rate to 3.9999998989515007e-05.
+
+Epoch 26: ReduceLROnPlateau reducing learning rate to 1.5999999595806004e-05.
+
+========== 訓練時間 ==========
+本次訓練用了: 1h 5m 38.1s
+
+========== Detection 錯誤樣本 ==========
+[Val] 錯誤樣本數: 103
+val_index | global_index | true_det | pred_det |     prob | Global_SCNR(dB)
+---------------------------------------------------------------------------
+       38 |        26899 |        1 |        0 |   0.1726 |          -36.93
+      165 |        11669 |        0 |        1 |   0.8150 |             NaN
+      238 |         4316 |        0 |        1 |   0.7246 |             NaN
+      378 |        10455 |        1 |        0 |   0.0329 |          -32.93
+      380 |        13980 |        0 |        1 |   0.9229 |             NaN
+      403 |        33792 |        0 |        1 |   0.6025 |             NaN
+      444 |         1714 |        0 |        1 |   0.5417 |             NaN
+      452 |         5939 |        0 |        1 |   0.9908 |             NaN
+      483 |        28595 |        1 |        0 |   0.3873 |          -21.48
+      536 |        17984 |        1 |        0 |   0.0157 |          -28.77
+      676 |        15378 |        1 |        0 |   0.2774 |          -38.80
+      703 |         9361 |        1 |        0 |   0.3114 |          -26.71
+      766 |        27376 |        0 |        1 |   0.8975 |             NaN
+      770 |        42113 |        0 |        1 |   0.8228 |             NaN
+      813 |        40649 |        0 |        1 |   0.7933 |             NaN
+      876 |        12060 |        1 |        0 |   0.3285 |          -43.03
+      879 |         8068 |        0 |        1 |   0.5978 |             NaN
+      897 |        37721 |        0 |        1 |   0.6551 |             NaN
+     1028 |        25792 |        1 |        0 |   0.1222 |          -11.51
+     1051 |        36702 |        1 |        0 |   0.3687 |          -29.60
+
+========== Detection Threshold Sweep ==========
+ th  |  TN   FP   FN   TP  | Precision | Recall/Pd |   F1   |  P_FA
+0.30 | 2420   81   34 2465 |    0.9682 |    0.9864 | 0.9772 | 0.0324
+0.40 | 2433   68   43 2456 |    0.9731 |    0.9828 | 0.9779 | 0.0272
+0.50 | 2448   53   50 2449 |    0.9788 |    0.9800 | 0.9794 | 0.0212
+0.60 | 2458   43   62 2437 |    0.9827 |    0.9752 | 0.9789 | 0.0172
+0.70 | 2465   36   71 2428 |    0.9854 |    0.9716 | 0.9784 | 0.0144
+0.80 | 2476   25   84 2415 |    0.9898 |    0.9664 | 0.9779 | 0.0100
+0.90 | 2485   16  111 2388 |    0.9933 |    0.9556 | 0.9741 | 0.0064
+
+========== Detection Metrics ==========
+[Val]   precision: 0.9788, recall/Pd: 0.9800, F1: 0.9794
+[[2448   53]
+ [  50 2449]]
+[Val]   X MAE: 4.0040 m
+[Val]   Y MAE: 6.4252 m
+[Val]   X RMSE: 5.1606 m
+[Val]   Y RMSE: 8.5993 m
+[Val]   Position Euclidean MAE: 8.4019 m
+
+[Info] Val global clutter-based SCNR auto bins:
+Global SCNR min = -93.89 dB
+Global SCNR max = -0.60 dB
+bin width = 5.00 dB
+number of bins = 19
+
+========== Val Global SCNR-binned Detection Accuracy ==========
+ Global SCNR bin (dB) | median global SCNR | count | correct | accuracy/Pd | reliability
+[ -95.00,  -90.00) |      -93.89 |     1 |       1 |     1.0000 |        LOW
+[ -90.00,  -85.00) |      -88.38 |     3 |       3 |     1.0000 |        LOW
+[ -85.00,  -80.00) |      -80.83 |     2 |       2 |     1.0000 |        LOW
+[ -80.00,  -75.00) |      -76.15 |     4 |       4 |     1.0000 |        LOW
+[ -75.00,  -70.00) |      -71.62 |    12 |      12 |     1.0000 |        LOW
+[ -70.00,  -65.00) |      -68.87 |    15 |      13 |     0.8667 |        LOW
+[ -65.00,  -60.00) |      -61.72 |    16 |      16 |     1.0000 |        LOW
+[ -60.00,  -55.00) |      -56.83 |    42 |      42 |     1.0000 |         OK
+[ -55.00,  -50.00) |      -52.08 |    79 |      79 |     1.0000 |         OK
+[ -50.00,  -45.00) |      -47.21 |   139 |     135 |     0.9712 |         OK
+[ -45.00,  -40.00) |      -42.15 |   216 |     212 |     0.9815 |         OK
+[ -40.00,  -35.00) |      -37.49 |   276 |     271 |     0.9819 |         OK
+[ -35.00,  -30.00) |      -32.52 |   344 |     337 |     0.9797 |         OK
+[ -30.00,  -25.00) |      -27.51 |   370 |     358 |     0.9676 |         OK
+[ -25.00,  -20.00) |      -22.66 |   385 |     377 |     0.9792 |         OK
+[ -20.00,  -15.00) |      -17.59 |   279 |     274 |     0.9821 |         OK
+[ -15.00,  -10.00) |      -12.99 |   185 |     182 |     0.9838 |         OK
+[ -10.00,   -5.00) |       -7.45 |    94 |      94 |     1.0000 |         OK
+[  -5.00,    0.00) |       -3.32 |    37 |      37 |     1.0000 |         OK
+[Info] Val global SCNR-accuracy 圖已儲存: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\Training_Result_1T2R\val_global_scnr_detection_accuracy_auto.png
+[Info] MIMO normalization params 已存到: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\Training_Result_1T2R\1T2R_norm_params.pkl
+[Info] 模型權重已存到: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\Training_Result_1T2R\1T2R_det_pos_geo_weights.h5
+[Info] history 已存到: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\Training_Result_1T2R\history.pkl
+[Info] 訓練時間後的終端輸出已存成 TXT: C:\Users\user\Desktop\高暐鈞資料\python\0518\1T2R\Training_Result_1T2R\CNN_Topology_terminal_log.txt

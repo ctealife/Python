@@ -1,0 +1,65 @@
+{
+    "test_rx1_path": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\2T2R\\testing_data_rx1.mat",
+    "test_rx2_path": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\2T2R\\testing_data_rx2.mat",
+    "model_root": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800",
+    "out_dir": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\TestResult_AllModels",
+    "fixed_threshold": 0.5,
+    "fixed_pfa_list": [
+        0.05,
+        0.01
+    ],
+    "processing_config": {
+        "2T2R": {
+            "active_rx": [
+                1,
+                2
+            ],
+            "mf_tx": [
+                1,
+                2
+            ],
+            "train_name": "2T2R",
+            "model_dir": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\Training_Result_2T2R",
+            "weights_name": "2T2R_det_pos_geo_weights.h5",
+            "norm_name": "2T2R_norm_params.pkl"
+        },
+        "2T1R": {
+            "active_rx": [
+                1
+            ],
+            "mf_tx": [
+                1,
+                2
+            ],
+            "train_name": "2T1R",
+            "model_dir": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\Training_Result_2T1R",
+            "weights_name": "2T1R_det_pos_geo_weights.h5",
+            "norm_name": "2T1R_norm_params.pkl"
+        },
+        "1T2R": {
+            "active_rx": [
+                1,
+                2
+            ],
+            "mf_tx": [
+                1
+            ],
+            "train_name": "1T2R",
+            "model_dir": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\Training_Result_1T2R",
+            "weights_name": "1T2R_det_pos_geo_weights.h5",
+            "norm_name": "1T2R_norm_params.pkl"
+        },
+        "1T1R": {
+            "active_rx": [
+                1
+            ],
+            "mf_tx": [
+                1
+            ],
+            "train_name": "1T1R",
+            "model_dir": "C:\\鈞論文\\paper_2026\\CNN\\training_result\\0518\\SCATTER 0800\\Training_Result_1T1R",
+            "weights_name": "1T1R_det_pos_geo_weights.h5",
+            "norm_name": "1T1R_norm_params.pkl"
+        }
+    }
+}
